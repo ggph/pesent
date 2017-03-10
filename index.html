@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    
+    <body>
+        <title>What I Learned  :D</title>
+        
+        
+        <h1>When I first started</h1>
+        
+        <p>when I first got to new target I started learning HTML from w3schools. It was fun to take notes that would later help me in building this website and others like it.</p>
+        
+        
+        <h3>Some of the most fun things I have done at New Target Inc.</h3>
+        
+        <p>some things I have done that I loved doing was using CSS to create colored text and backround. Also when I created an overlay so when you clicked a button the whole screen went white. </p>
+        <button onclick="toggleOverlay()">Example of Overlay</button>
+        
+        
+        
+        <h3>My overall experaince...</h3>
+        
+        <p>My overall experaince at New Target was AMAZING! I definetly recomend it to friends and peers of mine.</p>
+        
+        <head>
+            <div id="overlay"></div>
+            <style>
+             div#overlay {
+	display: none;
+	z-index: 2;
+	background: #FFFFFF;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+}
+div#specialBox {
+	display: none;
+	position: relative;
+	z-index: 3;
+	margin: 150px auto 0px auto;
+	width: 500px; 
+	height: 300px;
+	background: #FFF;
+	color: #000;
+}
+div#wrapper {
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	padding-left:24px;
+}   
+                
+                
+                
+                
+                
+            </style>
+            <script>
+            function toggleOverlay(){
+	var overlay = document.getElementById('overlay');
+	var specialBox = document.getElementById('specialBox');
+	overlay.style.opacity = 1;
+	if(overlay.style.display == "block"){
+		overlay.style.display = "none";
+		specialBox.style.display = "none";
+	} else {
+		overlay.style.display = "block";
+		specialBox.style.display = "block";
+	}
+}    
+                
+            </script>
+            
+            
+            
+        </head>
+        
+        
+        
+        
+        
+    </body>
+    
+    
+    
+    
+    
+</html>
